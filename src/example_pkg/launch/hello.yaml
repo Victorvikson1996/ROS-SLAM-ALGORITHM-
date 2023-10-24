@@ -1,0 +1,6 @@
+launch:
+  - arg: { name: "namespace", default: "" }
+  - node:
+      pkg: "example_pkg"
+      exec: "hello_node"
+      namespace: "$(var namespace)"
